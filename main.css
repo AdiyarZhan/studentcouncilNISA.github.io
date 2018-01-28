@@ -7,7 +7,7 @@ body, html {
 
 .parallax { 
     /* The image used */
-    background-image: url('/Users/aldiyar/Desktop/landscape with logo/logomountain.png');
+    background-image: url('/Users/aldiyar/Documents/GithHub/studentcouncilNISA/GithHub/studentcouncilNISA/landscape with logo/logomountain.png');
 
     /* Set a specific height */
     height: 800px; 
@@ -20,7 +20,7 @@ body, html {
 }
 .parallax2 { 
     /* The image used */
-    background-image: url('/Users/aldiyar/Desktop/landscape with logo/logowintermountain.png');
+    background-image: url('/Users/aldiyar/Documents/GithHub/studentcouncilNISA/GithHub/studentcouncilNISA/landscape with logo/logowintermountain.png');
 
     /* Set a specific height */
     height: 800px; 
@@ -32,12 +32,12 @@ body, html {
     background-size: cover;
 }
 .ing {
-    background-image: url('/Users/aldiyar/Desktop/landscape with logo/logobrowngreen.png');
+    background-image: url('/Users/aldiyar/Documents/GithHub/studentcouncilNISA/GithHub/studentcouncilNISA/landscape with logo/logobrowngreen.png');
     height: 500px;
 }
 .parallax1 { 
     /* The image used */
-    background-image: url('/Users/aldiyar/Desktop/landscape with logo/logolake.png');
+    background-image: url('/Users/aldiyar/Documents/GithHub/studentcouncilNISA/GithHub/studentcouncilNISA/landscape with logo/logolake.png');
 
     /* Set a specific height */
     height: 800px; 
@@ -141,6 +141,8 @@ body, html {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+
 .container {
   position: relative;
   width: auto;

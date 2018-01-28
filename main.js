@@ -56,6 +56,58 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
+
+
+
+
+
+var slideIndex1 = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides1(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide1(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides1 = document.getElementsByClassName("mySlides1");
+  var dots1 = document.getElementsByClassName("dot1");
+  if (n > slides1.length) {slideIndex1 = 1} 
+  if (n < 1) {slideIndex1 = slides1.length}
+  for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots[i].className.replace(" active1", "");
+  }
+  slides1[slideIndex1-1].style.display = "block"; 
+  dots1[slideIndex1-1].className += " active";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText1 = document.getElementById("caption1");
+  captionText1.innerHTML = element.alt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // Change style of navbar on scroll
 window.onscroll = function() { myFunction()};
 function myFunction() {
