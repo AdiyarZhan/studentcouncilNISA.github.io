@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>COMING SOON</title>
+    <link rel="shortcut icon" href="/Users/aldiyar/Desktop/landscape with logo/favicon1.ico" type="image/x-icon" /> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="main.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('/Users/aldiyar/Desktop/landscape with logo/logograss.png');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  
+    <div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button  w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/Users/aldiyar/Documents/index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="/Users/aldiyar/Documents/crew.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OUR CREW</a>
+    <div class="dropdown">
+    <button class="dropbtn w3-bar-item w3-button w3-center" onclick="toggleFunction()"> <i class="fa fa-th"></i> EVENTS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">LAST EVENTS</a>
+      <a href="#">UPCOMING EVENTS</a>
+     
+    </div>
+  </div> 
+  
+
+  </div>
+ 
+     
+</div>
+  
+   
+
+
+        <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <br>
+    <a href="/Users/aldiyar/Documents/crew.html" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">OUR CREW</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">EVENTS</a>
+  
+   
+  </div>
+    
+    </div>
+    
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    
+      <!-- Display the countdown timer in an element -->
+<h1 class="w3-large w3-center" id="demo"> </h1>
+
+    
+  </div>
+  
+
+    
+    
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 27, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    <script src="main.js">
+    </script>
+</body>
+</html>
+
